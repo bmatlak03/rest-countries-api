@@ -6,7 +6,7 @@ const Country = ({allCountryData,clicked}) => {
     const {name, population, region, capital, photo} = allCountryData
     return (
       <Link 
-      to={`/${name}`}
+      to={`/rest-countries-api/${name}`}
       onClick={clicked}
       style={{
         textDecoration:'none'

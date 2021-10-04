@@ -24,7 +24,7 @@ const CountryDetails = () => {
         })
         .catch(err =>{
             console.log('catching error', err)
-            window.location.replace('/')
+            window.location.replace('/rest-countries-api')
         })
     },[name,history])
     
@@ -60,7 +60,7 @@ const CountryDetails = () => {
         padding: '30px 8%',
         height: '80vh'
     }}>
-        <Button variant="contained" onClick={()=> history.push("/")} startIcon={<ArrowBackIcon/>}>
+        <Button variant="contained" onClick={()=> history.push("/rest-countries-api")} startIcon={<ArrowBackIcon/>}>
             go back
         </Button>
     

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { Route, Switch, Redirect } from "react-router";
+import { Route, Switch } from "react-router";
 import Layout from "./components/Layout/Layout";
 import Countries from "./components/Countries/Countries";
 import CountryDetails from "./components/CountryDetails/CountryDetails";
@@ -45,7 +45,7 @@ function App() {
   return (
     <Layout>
       <Switch>
-        <Route path="/" exact>
+        <Route path="/rest-countries-api" exact>
           <FilterSection
             region={region}
             onRegionChange={(region) => handleRegionChange(region)}
@@ -58,7 +58,7 @@ function App() {
             countriesData={currentCountries}
           />
         </Route>
-        <Route path="/:name">
+        <Route path="/rest-countries-api/:name">
           <CountryDetails />
         </Route>
       </Switch>

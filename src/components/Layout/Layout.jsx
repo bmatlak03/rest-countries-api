@@ -5,7 +5,6 @@ import HeaderSection from "../HeaderSection/HeaderSection";
 
 const Layout = ({children}) => {
     const [themeMode, setThemeMode] = useState("light");
-
     useEffect(()=>{
         if(!themeMode) {
             localStorage.setItem('theme', "light")
@@ -64,7 +63,7 @@ const Layout = ({children}) => {
         [themeMode]
       );
     return (
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={theme} injectFirst >
             <div style={{ maxWidth: 1920, margin: "0 auto" }}>
                 <CssBaseline />
                 <HeaderSection changeTheme={handleChangeTheme} currentTheme={themeMode}/>

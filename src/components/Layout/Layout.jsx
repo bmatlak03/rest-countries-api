@@ -6,7 +6,7 @@ import HeaderSection from "../HeaderSection/HeaderSection";
 const Layout = ({children}) => {
     const [themeMode, setThemeMode] = useState("light");
     useEffect(()=>{
-        if(!themeMode) {
+        if(!localStorage.getItem("theme")) {
             localStorage.setItem('theme', "light")
         }
         const storageTheme = localStorage.getItem("theme")

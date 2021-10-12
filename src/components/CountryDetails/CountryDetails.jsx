@@ -1,38 +1,23 @@
 import { useParams,useHistory } from "react-router";
 import { Typography, Box, Stack, Button, Paper, CircularProgress } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { useEffect, useState } from "react";
-import axios from 'axios'
+import useFetch from '../../hooks/useFetch'
 const CountryDetails = () => {
     const history = useHistory()
     const {name} = useParams()
-    const [countryDetails, setCountryDetails] = useState([])
-    const [loading,setIsLoading] = useState(false)
-    
-    
+
+    const {data: countryInfo, loading} = useFetch(`https://restcountries.com/v2/name/${name}`)
     let currencies
     let borderCountries
     let languages
     let countryPage
-    useEffect(()=> {
-        setIsLoading(true)
-        axios.get(`https://restcountries.com/v2/name/${name}`)
-        .then(res=>{
-            setCountryDetails(res.data[0])
-            setIsLoading(false)
-            
-        })
-        .catch(err =>{
-            console.log('catching error', err)
-            window.location.replace('/rest-countries-api')
-        })
-    },[name,history])
     
-    if (countryDetails.currencies) {
-        currencies = countryDetails.currencies.map((currency) => <span key={currency.name}>{currency.name},</span>)
+    
+    if (countryInfo.currencies) {
+        currencies = countryInfo.currencies.map((currency) => <span key={currency.name}>{currency.name},</span>)
     }
-    if (countryDetails.borders) {
-        borderCountries = countryDetails.borders.map(border=>(
+    if (countryInfo.borders) {
+        borderCountries = countryInfo.borders.map(border=>(
         <Paper
             key={border} 
             variant="elevation" 
@@ -47,8 +32,8 @@ const CountryDetails = () => {
     ))
     }
     
-    if (countryDetails.languages){
-        languages = countryDetails.languages
+    if (countryInfo.languages){
+        languages = countryInfo.languages
         .map((language) => 
         <span key={language.name}>{language.name},</span>)
     }
@@ -72,7 +57,7 @@ const CountryDetails = () => {
             alignItems="center"
         >   
         <Box>
-            <img src={countryDetails.flag} alt="" style={{
+            <img src={countryInfo.flag} alt="" style={{
                 width:'100%'
             }}/>
         </Box>
@@ -85,7 +70,7 @@ const CountryDetails = () => {
         >
             
                 <Typography variant="h5">
-                    {countryDetails.name}
+                    {countryInfo.name}
                 </Typography>
                 <Stack
                     sx={{width:'80%'}}
@@ -97,25 +82,25 @@ const CountryDetails = () => {
                 <Box>
                     
                     <Typography variant="subtitle2">
-                        <b>Native Name:</b> {countryDetails.nativeName}
+                        <b>Native Name:</b> {countryInfo.nativeName}
                     </Typography>
                     <Typography variant="subtitle2">
-                        <b>Population:</b> {countryDetails.population}
+                        <b>Population:</b> {countryInfo.population}
                     </Typography>
                     <Typography variant="subtitle2">
-                        <b>Region:</b> {countryDetails.region}
+                        <b>Region:</b> {countryInfo.region}
                     </Typography>
                     <Typography variant="subtitle2">
-                        <b>Subregion:</b> {countryDetails.subregion}
+                        <b>Subregion:</b> {countryInfo.subregion}
                     </Typography>
                     <Typography variant="subtitle2">
-                        <b>Capital:</b> {countryDetails.capital}
+                        <b>Capital:</b> {countryInfo.capital}
                     </Typography>
                 </Box>
     
                 <Box sx={{marginTop: 5,marginBottom: 5}}>
                     <Typography variant="subtitle2">
-                        <b>Top Level Domain:</b> {countryDetails.topLevelDomain}
+                        <b>Top Level Domain:</b> {countryInfo.topLevelDomain}
                     </Typography>
                     <Typography variant="subtitle2">
                         <b>Currencies:</b> {currencies}

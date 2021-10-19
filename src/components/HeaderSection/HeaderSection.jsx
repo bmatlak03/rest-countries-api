@@ -1,6 +1,8 @@
 import { Typography, Button, Box,} from "@mui/material";
 import Brightness3Icon from '@mui/icons-material/Brightness3';
+import { useTheme } from "@mui/material";
 const HeaderSection = ({changeTheme,currentTheme}) => {
+  const theme = useTheme()
   const currentMode = currentTheme === "light" ? "dark" : "light"
     return ( 
         <Box
@@ -12,7 +14,7 @@ const HeaderSection = ({changeTheme,currentTheme}) => {
           height: 80,
           padding: 2,
           boxShadow: "3",
-          background: currentTheme === "dark" ? "hsl(209, 23%, 22%)" : '#fff',
+          background: theme.palette.background.paper,
         }
       }
       >

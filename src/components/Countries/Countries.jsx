@@ -1,8 +1,6 @@
 import Country from '../Country/Country'
 import {Box, CircularProgress} from "@mui/material";
 
-
-
 const Countries = ({countriesData,loading}) => {
     let transformedCountries = []
     countriesData.forEach((country)=> {

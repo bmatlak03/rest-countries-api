@@ -7,36 +7,30 @@ const CountryDetails = () => {
     const {name} = useParams()
 
     const {data: countryInfo, loading} = useFetch(`https://restcountries.com/v2/name/${name}`)
-    let currencies
-    let borderCountries
-    let languages
     let countryPage
     
     
-    if (countryInfo.currencies) {
-        currencies = countryInfo.currencies.map((currency) => <span key={currency.name}>{currency.name},</span>)
-    }
-    if (countryInfo.borders) {
-        borderCountries = countryInfo.borders.map(border=>(
-        <Paper
-            key={border} 
-            variant="elevation" 
-            component="span" 
-            sx={{
-                margin:'5px',
-                padding: '5px 10px',
-            }}
-        >
-            {border}
-        </Paper>
-    ))
-    }
+
+    const currencies = countryInfo.currencies?.map((currency) => <span key={currency.name}>{currency.name},</span>)
+
+    const borderCountries = countryInfo.borders?.map(border=>(
+    <Paper
+        key={border} 
+        variant="elevation" 
+        component="span" 
+        sx={{
+            margin:'5px',
+            padding: '5px 10px',
+        }}
+    >
+        {border}
+    </Paper>
+))
     
-    if (countryInfo.languages){
-        languages = countryInfo.languages
-        .map((language) => 
-        <span key={language.name}>{language.name},</span>)
-    }
+    
+    const languages = countryInfo.languages?.map((language) => 
+    <span key={language.name}>{language.name},</span>)
+    
     
 
     
@@ -137,7 +131,7 @@ const CountryDetails = () => {
                 justifyContent:"center",
                 alignItems:'center'
             }}>
-                {loading && <CircularProgress/>}
+                <CircularProgress/>
             </div>
         )
     }

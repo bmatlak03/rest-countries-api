@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Rest Countries API 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+App created to practice Material UI, refresh React syntax and how to use and create custom hooks
 
-## Available Scripts
 
-In the project directory, you can run:
+## Instalation
 
-### `npm start`
+To run this application you need to install [NodeJS](https://nodejs.org)
+After successful installation:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. [Download project as ZIP](https://github.com/bmatlak03/rest-countries-api/archive/refs/heads/master.zip) or if you want to clone the repository into a directory run command `git clone https://github.com/bmatlak03/rest-countries-api.git <folderName> `
+2. After that run command `npm install` to install necessary dependencies
+3. Run command `npm start`
+4. Go to https://localhost:3000
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Tech stack
 
-### `npm test`
+<a href="https://reactjs.org/" title="React"><img src="https://github.com/get-icon/geticon/raw/master/icons/react.svg" alt="React" width="50px" height="50px"></a> <a href="https://developer.mozilla.org/pl/docs/Web/JavaScript" title="Javascript"><img src="https://github.com/get-icon/geticon/blob/master/icons/javascript.svg" alt="Javascript" width="50px" height="50px"></a> <a href="https://material-ui.com/" title="Material UI"><img src="https://github.com/get-icon/geticon/raw/master/icons/material-ui.svg" alt="Material UI" width="50px" height="50px"></a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**API**
 
-### `npm run build`
+[Rest Countries API](https://restcountries.com/v2/all)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Live
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[Github Pages](https://bmatlak03.github.io/rest-countries-api/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Screenshots
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Desktop**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img src="https://img001.prntscr.com/file/img001/u_OJIXrXSDa74A2kSjJrLQ.png" alt="RestCountries_Desktop" width="50%"> <img src="	https://img001.prntscr.com/file/img001/0JGFz9miSSuGgdo0dyE1EQ.png" alt="RestCountries_Desktop" width="50%">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Mobile**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<img src="https://img001.prntscr.com/file/img001/3m1lmakwT2CuAhcb4cUfVw.png" alt="RestCountries_Mobile" width="25%"> <img src="	https://img001.prntscr.com/file/img001/1z6MUr0PQgiRgY4Q1cK-DQ.png" alt="InvoiceApp_Mobile" width="25%"> 
 
-## Learn More
+## Inspiration
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+My inspiration was one of challange on [Frontend Mentor](https://www.frontendmentor.io/) [Rest Countries API](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca)

@@ -30,11 +30,11 @@ After successful installation:
 
 **Desktop**
 
-<img src="https://img001.prntscr.com/file/img001/u_OJIXrXSDa74A2kSjJrLQ.png" alt="RestCountries_Desktop" width="50%"> <img src="	https://img001.prntscr.com/file/img001/0JGFz9miSSuGgdo0dyE1EQ.png" alt="RestCountries_Desktop" width="50%">
+<img src="https://img001.prntscr.com/file/img001/u_OJIXrXSDa74A2kSjJrLQ.png" alt="RestCountries_Desktop" width="50%"> <img src="https://img001.prntscr.com/file/img001/0JGFz9miSSuGgdo0dyE1EQ.png" alt="RestCountries_Desktop" width="50%">
 
 **Mobile**
 
-<img src="https://img001.prntscr.com/file/img001/3m1lmakwT2CuAhcb4cUfVw.png" alt="RestCountries_Mobile" width="25%"> <img src="	https://img001.prntscr.com/file/img001/1z6MUr0PQgiRgY4Q1cK-DQ.png" alt="InvoiceApp_Mobile" width="25%"> 
+<img src="https://img001.prntscr.com/file/img001/3m1lmakwT2CuAhcb4cUfVw.png" alt="RestCountries_Mobile" width="25%"> <img src="https://img001.prntscr.com/file/img001/1z6MUr0PQgiRgY4Q1cK-DQ.png" alt="InvoiceApp_Mobile" width="25%"> 
 
 ## Inspiration
 

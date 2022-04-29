@@ -2,6 +2,17 @@
 
 App created to practice Material UI, refresh React syntax and how to use and create custom hooks
 
+<details>
+ <summary><b>What I have learned by making this project:</b></summary>
+<br>
+ 
+What I have learned:
+ - Basics of [Material UI](https://mui.com/)
+ - Creating custom hooks
+ - Consolidate knowledge of React
+ - Consolidate knowledge [React Router v5](https://reactrouter.com/)
+ - Other ways how to fetch data [(axios)](https://github.com/axios/axios)
+</details>
 
 ## Instalation
 
